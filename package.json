@@ -1,0 +1,49 @@
+{
+  "name": "@antigravity/cli",
+  "version": "0.1.0",
+  "description": "AI coding assistant that runs in your terminal, aware of your codebase",
+  "type": "module",
+  "bin": {
+    "agent": "./dist/index.js",
+    "antigravity": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "coding-assistant",
+    "cli",
+    "tui",
+    "terminal",
+    "agent",
+    "llm"
+  ],
+  "author": "Antigravity Team",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "eventsource-parser": "^3.0.0",
+    "execa": "^9.5.2",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.3",
+    "ink": "^5.1.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^18.3.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.18",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
